@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2646974569598294520}
   m_Layer: 0
   m_Name: DragonBoss
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124,7 +124,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -163,7 +163,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb2e849101f424ab59e827a6cb451640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
+  oneShoting: 15
   speed: 3000
+  bulletSpeed: 300
 --- !u!1 &7483939913513495141
 GameObject:
   m_ObjectHideFlags: 0
