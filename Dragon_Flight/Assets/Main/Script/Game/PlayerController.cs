@@ -60,11 +60,16 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "Monster")
         {
             //mainCamera SetTrigger
-            mainCamera.GetComponent<Animator>().SetTrigger("CameraShake");
+            
 
 
             print("Player HP--");
-            playerHp--;
+            if(!isFire == false)
+            {
+                playerHp--;
+                mainCamera.GetComponent<Animator>().SetTrigger("CameraShake");
+            }
+            
             if (playerHp == 2)
             {
                 print("hp3 false");
