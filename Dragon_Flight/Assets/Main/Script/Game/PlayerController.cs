@@ -23,6 +23,13 @@ public class PlayerController : MonoBehaviour
     public float curSpecialMoveDelay;
     public float maxSpecialMoveDelay;
 
+    public float playerHp = 3f;
+    public GameObject hp1;
+    public GameObject hp2;
+    public GameObject hp3;
+    public GameObject mainCamera;
+    public GameObject panel;
+
     public GameObject bulletSpecialMove;
     public GameObject bulletObjA;
     public GameObject bulletObjB;
@@ -49,6 +56,36 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        //Monster 태그와 충돌시 HP--
+        if (collision.gameObject.tag == "Monster")
+        {
+            //mainCamera SetTrigger
+            mainCamera.GetComponent<Animator>().SetTrigger("CameraShake");
+
+
+            print("Player HP--");
+            playerHp--;
+            if (playerHp == 2)
+            {
+                print("hp3 false");
+                hp3.SetActive(false);
+            }
+            else if (playerHp == 1)
+            {
+                print("hp2 false");
+                hp2.SetActive(false);
+            }
+            else if (playerHp == 0)
+            {
+                print("hp1 false");
+                hp1.SetActive(false);
+                //일시정지
+                Time.timeScale = 0;
+                //panel setactive
+                panel.SetActive(true);
+            }
+        }
+
         // 플레이어 범위 제한 설정
         if (collision.gameObject.tag == "Border")
         {
@@ -76,6 +113,9 @@ public class PlayerController : MonoBehaviour
             switch (item.type)
             {
                 case "Coin":
+
+                    //gold +1000
+                    gold.score += 1000;
                     //scroe += 1000;
                     break;
                 case "Power":

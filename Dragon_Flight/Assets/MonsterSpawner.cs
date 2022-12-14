@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class MonsterSpawner : MonoBehaviour
 {
     public GameObject Meteor;
+    public GameObject Meteor2;
     public GameObject Target;
     public List<GameObject> mob = new List<GameObject>();
     public GameObject Boss;
@@ -82,25 +83,40 @@ public class MonsterSpawner : MonoBehaviour
 
     void Monster1Spawn()
     {
-        switch (Random.Range(0, 2))
+        switch (Random.Range(0, 3))
         {
             case 0: Instantiate(mob[Random.Range(0, 4)], new Vector3(-2.0f, 5, 0), transform.rotation); break;
             case 1: break;
+            case 2: Instantiate(mob[Random.Range(0, 4)], new Vector3(-2.0f, 5, 0), transform.rotation);
+                Instantiate(Meteor2, new Vector3(-2.0f, 5, 0), transform.rotation);
+                break;
         }
-        switch (Random.Range(0, 2))
+        switch (Random.Range(0, 3))
         {
             case 0: Instantiate(mob[Random.Range(0, 4)], new Vector3(-0.7f, 5, 0), transform.rotation); break;
             case 1: break;
+            case 2:
+                Instantiate(mob[Random.Range(0, 4)], new Vector3(-0.7f, 5, 0), transform.rotation);
+                Instantiate(Meteor2, new Vector3(-0.7f, 5, 0), transform.rotation);
+                break;
         }
-        switch (Random.Range(0, 2))
+        switch (Random.Range(0, 3))
         {
             case 0: Instantiate(mob[Random.Range(0, 4)], new Vector3(0.7f, 5, 0), transform.rotation); break;
             case 1: break;
+            case 2:
+                Instantiate(mob[Random.Range(0, 4)], new Vector3(0.7f, 5, 0), transform.rotation);
+                Instantiate(Meteor2, new Vector3(0.7f, 5, 0), transform.rotation);
+                break;
         }
-        switch (Random.Range(0, 2))
+        switch (Random.Range(0, 3))
         {
             case 0: Instantiate(mob[Random.Range(0, 4)], new Vector3(2.0f, 5, 0), transform.rotation); break;
             case 1: break;
+            case 2:
+                Instantiate(mob[Random.Range(0, 4)], new Vector3(2.0f, 5, 0), transform.rotation);
+                Instantiate(Meteor2, new Vector3(2.0f, 5, 0), transform.rotation);
+                break;
         }
     }
 }
