@@ -58,9 +58,4 @@ public class BossMovement : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    //void Die()
-    //{
-    //    Destroy(gameObject);
-    //}
 }
