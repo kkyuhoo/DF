@@ -25,7 +25,7 @@ public class MetoreMovement : MonoBehaviour
         Destroy(gameObject);
     }
 
-    //이동 경로에 파란선이 그려지게 하는 코드
+    //?�동 경로???��??�이 그려지�??�는 코드
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;

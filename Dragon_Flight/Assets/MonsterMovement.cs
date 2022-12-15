@@ -16,16 +16,18 @@ public class MonsterMovement : MonoBehaviour
     public GameObject itemPower;
     public GameObject itemSpecialMove;
 
+    PlayerController playerController;
+
     void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
         rigid.velocity = Vector2.down * speed;
     }
-
-    void Update()
+    void Awake()
     {
-        rigid.velocity = Vector2.down * Time.deltaTime * speed;
+        playerController = FindObjectOfType<PlayerController>();
     }
+
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -55,29 +57,28 @@ public class MonsterMovement : MonoBehaviour
 
             // #.Random Radio Item Drop
             float ran = Random.Range(0, 10);
-            if(ran < 6)
+            if(ran < 5)
             {
                 Debug.Log("Not Item");
             }
             else if(ran < 8.8) // Coin 38%
             {
                 Instantiate(itemCoin, transform.position, transform.rotation);
+                playerController.PlaySound("ITEMDROP");
             }
-            else if(ran < 9.8) // Power 10%
+            else if(ran < 9.5) // Power 10%
             {
                 Instantiate(itemPower, transform.position, transform.rotation);
+                playerController.PlaySound("ITEMDROP");
             }
-            else if(ran < 10) // SpecialMove 2%
+            else if(ran < 10) // SpecialMove 5%
             {
                 Instantiate(itemSpecialMove, transform.position, transform.rotation);
+                playerController.PlaySound("ITEMDROP");
             }
 
             Destroy(gameObject);
         }
     }
-    //void Die()
-    //{
-    //    Destroy(gameObject);
-    //}
 
 }

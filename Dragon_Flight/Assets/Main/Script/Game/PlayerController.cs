@@ -45,7 +45,56 @@ public class PlayerController : MonoBehaviour
 
     Animator anim;
 
-    // Update is called once per frame
+    // 오디오 변수 선언
+    
+    public AudioClip audioAttack;
+    public AudioClip audioDamaged;
+    public AudioClip audioItem;
+    public AudioClip audioDie;
+    public AudioClip audioFinish;
+    public AudioClip audioMonsterDeath;
+    public AudioClip audioItemDrop;
+
+
+
+
+    private AudioSource audioSource;
+
+    void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
+    public void PlaySound(string action)
+    {
+        switch (action)
+        {
+            case "ATTACK":
+                audioSource.clip = audioAttack;
+                break;
+            case "DAMAGED":
+                audioSource.clip = audioDamaged;
+                break;
+            case "ITEM":
+                audioSource.clip = audioItem;
+                break;
+            case "DIE":
+                audioSource.clip = audioDie;
+                break;
+            case "FINISH":
+                audioSource.clip = audioFinish;
+                break;
+            case "MONSTER":
+                audioSource.clip = audioMonsterDeath;
+                break;
+            case "ITEMDROP":
+                audioSource.clip = audioItemDrop;
+                break;
+
+        }
+        audioSource.Play();
+    }
+
     void Update()
     {
         Move();
@@ -59,10 +108,6 @@ public class PlayerController : MonoBehaviour
         //Monster 태그와 충돌시 HP--
         if (collision.gameObject.tag == "Monster")
         {
-            //mainCamera SetTrigger
-            
-
-
             print("Player HP--");
             if(!isFire == false)
             {
@@ -82,6 +127,8 @@ public class PlayerController : MonoBehaviour
             }
             else if (playerHp == 0)
             {
+                // 오디오 
+                PlaySound("Die");
                 print("hp1 false");
                 hp1.SetActive(false);
                 //일시정지
@@ -89,6 +136,9 @@ public class PlayerController : MonoBehaviour
                 //panel setactive
                 panel.SetActive(true);
             }
+
+            // 오디오 피격
+            PlaySound("DAMAGED");
         }
 
         // 플레이어 범위 제한 설정
@@ -153,6 +203,9 @@ public class PlayerController : MonoBehaviour
                     break;
 
             }
+            // 오디오 아이템
+            PlaySound("ITEM");
+
             Destroy(collision.gameObject);
         }
 
@@ -242,6 +295,7 @@ public class PlayerController : MonoBehaviour
 
                 break;
         }
+        PlaySound("ATTACK");
         curShotDelay = 0;
 
     }
@@ -257,22 +311,6 @@ public class PlayerController : MonoBehaviour
     }
     void BulletSpecialMove()
     {
-
-        //// Remove Enemy
-        //GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
-        //for (int index = 0; index < enemies.Length; index++)
-        //{
-        //    Enemy enemyLogic = enemies[index].GetComponent<Enemy>();
-        //    enemyLogic.OnHit(1000);
-        //}
-
-        //// Remove Enemy Bullet
-        //GameObject[] bullets = GameObject.FindGameObjectsWithTag("EnemyBullet");
-        //for (int index = 0; index < bullets.Length; index++)
-        //{
-        //    Destroy(bullets[index]);
-        //}
-
         if (!Input.GetButton("Jump"))
             return;
 
