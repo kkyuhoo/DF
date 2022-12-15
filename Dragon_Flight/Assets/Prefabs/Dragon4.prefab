@@ -463,6 +463,14 @@ MonoBehaviour:
   itemCoin: {fileID: 6893917520337839280, guid: faeb2124933d56b4aa684b19708d61ce, type: 3}
   itemPower: {fileID: 1418751529105057284, guid: b33671245cf535e4aa8c2e1d8ad25d18, type: 3}
   itemSpecialMove: {fileID: 8384555378201918947, guid: 774305d484aedc8468e1e39ce9311b8f, type: 3}
+  childObject:
+  - {fileID: 3767670976929894751}
+  - {fileID: 3767670978288905945}
+  - {fileID: 3767670977998548725}
+  - {fileID: 3767670976726207425}
+  - {fileID: 3767670976716088116}
+  - {fileID: 3767670978375840425}
+  - {fileID: 4165860643630585689}
 --- !u!70 &3767670977614826073
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

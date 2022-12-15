@@ -221,8 +221,13 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
+<<<<<<< HEAD
   controlID: 201
 --- !u!114 &10
+=======
+  controlID: 151
+--- !u!114 &6
+>>>>>>> origin/jaeuk
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -246,8 +251,13 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
+<<<<<<< HEAD
   controlID: 172
 --- !u!114 &11
+=======
+  controlID: 152
+--- !u!114 &7
+>>>>>>> origin/jaeuk
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -272,8 +282,13 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
+<<<<<<< HEAD
   controlID: 173
 --- !u!114 &12
+=======
+  controlID: 153
+--- !u!114 &8
+>>>>>>> origin/jaeuk
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -351,7 +366,36 @@ MonoBehaviour:
   - {fileID: 19}
   m_Selected: 0
   m_LastSelected: 0
+<<<<<<< HEAD
 --- !u!114 &15
+=======
+--- !u!114 &11
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 12}
+  - {fileID: 13}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 563
+    width: 1467
+    height: 384
+  m_MinSize: {x: 200, y: 100}
+  m_MaxSize: {x: 16192, y: 8096}
+  vertical: 0
+  controlID: 55
+--- !u!114 &12
+>>>>>>> origin/jaeuk
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -361,13 +405,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
   m_Name: AnimatorControllerTool
+=======
+  m_Name: AnimationWindow
+>>>>>>> origin/jaeuk
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1071
     height: 385
   m_MinSize: {x: 100, y: 100}
@@ -379,6 +428,46 @@ MonoBehaviour:
   m_Selected: 1
   m_LastSelected: 1
 --- !u!114 &16
+=======
+    width: 979
+    height: 384
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 19}
+  m_Panes:
+  - {fileID: 19}
+  - {fileID: 20}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: ProjectBrowser
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 979
+    y: 0
+    width: 488
+    height: 384
+  m_MinSize: {x: 232, y: 271}
+  m_MaxSize: {x: 10002, y: 10021}
+  m_ActualView: {fileID: 18}
+  m_Panes:
+  - {fileID: 21}
+  - {fileID: 18}
+  m_Selected: 1
+  m_LastSelected: 0
+--- !u!114 &14
+>>>>>>> origin/jaeuk
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -396,10 +485,17 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 453
+<<<<<<< HEAD
     height: 631
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 24}
+=======
+    height: 947
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 22}
+>>>>>>> origin/jaeuk
   m_Panes:
   - {fileID: 24}
   m_Selected: 0
@@ -776,9 +872,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: -0.028582007, y: -2.2238798, z: -0.05537503}
     speed: 2
     m_Value: {x: -0.028582007, y: -2.2238798, z: -0.05537503}
+=======
+    m_Target: {x: -0.010015467, y: 1.4859201, z: -0.027605787}
+    speed: 2
+    m_Value: {x: -0.010015467, y: 1.4859201, z: -0.027605787}
+>>>>>>> origin/jaeuk
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -829,9 +931,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 7.450385
     speed: 2
     m_Value: 7.450385
+=======
+    m_Target: 3.4725428
+    speed: 2
+    m_Value: 3.4725428
+>>>>>>> origin/jaeuk
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -889,7 +997,11 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 20620000226200002462000026620000
       m_LastClickedID: 0
+<<<<<<< HEAD
       m_ExpandedIDs: b8faffff
+=======
+      m_ExpandedIDs: 8cc0fdff12c1fdff98c1fdff1ec2fdffc0c2fdff0099ffff8299ffff049affff26fbffff
+>>>>>>> origin/jaeuk
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -933,10 +1045,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1071
     y: 635
     width: 394
     height: 364
+=======
+    x: 979
+    y: 636
+    width: 486
+    height: 363
+>>>>>>> origin/jaeuk
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -962,14 +1081,24 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Prefabs
   m_LastFoldersGridSize: 16
+<<<<<<< HEAD
   m_LastProjectPath: C:\Users\USER\Desktop\DF_6\Dragon_Flight
+=======
+  m_LastProjectPath: C:\Users\KGA_14\Documents\DDDF\Dragon_Flight
+>>>>>>> origin/jaeuk
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 34710000
     m_LastClickedID: 28980
     m_ExpandedIDs: 0000000068650000327100006c71000000ca9a3bffffff7f
+=======
+    m_SelectedIDs: 72700000
+    m_LastClickedID: 28786
+    m_ExpandedIDs: 00000000f6640000fc64000000650000c2700000ce70000000ca9a3b
+>>>>>>> origin/jaeuk
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -997,7 +1126,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 0000000068650000
+=======
+    m_ExpandedIDs: 00000000f6640000f8640000fa640000fc640000fe6400000065000002650000
+>>>>>>> origin/jaeuk
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1083,8 +1216,13 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
+<<<<<<< HEAD
   m_LastSelectedObjectID: 35982
 --- !u!114 &22
+=======
+  m_LastSelectedObjectID: -147316
+--- !u!114 &20
+>>>>>>> origin/jaeuk
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1138,6 +1276,7 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
+<<<<<<< HEAD
     - e00: 0.7389474
       e01: 0
       e02: 0
@@ -1146,6 +1285,16 @@ MonoBehaviour:
       e11: 0.7389474
       e12: 0
       e13: 99.68947
+=======
+    - e00: 0.5144969
+      e01: 0
+      e02: 0
+      e03: 99.78618
+      e10: 0
+      e11: 0.5144969
+      e12: 0
+      e13: 31.118065
+>>>>>>> origin/jaeuk
       e20: 0
       e21: 0
       e22: 1
@@ -1186,6 +1335,7 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
+<<<<<<< HEAD
     - e00: 0.7389474
       e01: 0
       e02: 0
@@ -1194,6 +1344,16 @@ MonoBehaviour:
       e11: 0.7389474
       e12: 0
       e13: 99.68947
+=======
+    - e00: 0.30331224
+      e01: 0
+      e02: 0
+      e03: 45.57959
+      e10: 0
+      e11: 0.30331224
+      e12: 0
+      e13: 119.477745
+>>>>>>> origin/jaeuk
       e20: 0
       e21: 0
       e22: 1

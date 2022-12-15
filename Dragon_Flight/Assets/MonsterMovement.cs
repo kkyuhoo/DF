@@ -16,7 +16,11 @@ public class MonsterMovement : MonoBehaviour
     public GameObject itemPower;
     public GameObject itemSpecialMove;
 
+<<<<<<< HEAD
     PlayerController playerController;
+=======
+    public List<GameObject> childObject = new List<GameObject>();
+>>>>>>> origin/jaeuk
 
     void Start()
     {
@@ -42,7 +46,6 @@ public class MonsterMovement : MonoBehaviour
 
             Destroy(collision.gameObject);
         }
-
     }
     void OnHit(int dmg)
     {
@@ -77,7 +80,15 @@ public class MonsterMovement : MonoBehaviour
                 playerController.PlaySound("ITEMDROP");
             }
 
-            Destroy(gameObject);
+            //for문 childObject 비활성하
+            for (int i = 0; i < childObject.Count; i++)
+            {
+                childObject[i].SetActive(false);
+            }
+
+            //애니메이션 트리거 Death
+            gameObject.GetComponent<Animator>().SetTrigger("Death");
+            Destroy(gameObject,0.5f);
         }
     }
 

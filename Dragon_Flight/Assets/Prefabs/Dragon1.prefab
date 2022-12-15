@@ -217,6 +217,14 @@ MonoBehaviour:
   itemCoin: {fileID: 6893917520337839280, guid: faeb2124933d56b4aa684b19708d61ce, type: 3}
   itemPower: {fileID: 1418751529105057284, guid: b33671245cf535e4aa8c2e1d8ad25d18, type: 3}
   itemSpecialMove: {fileID: 8384555378201918947, guid: 774305d484aedc8468e1e39ce9311b8f, type: 3}
+  childObject:
+  - {fileID: 2646974570067535199}
+  - {fileID: 2646974569279118041}
+  - {fileID: 2646974568988433141}
+  - {fileID: 2646974569868050369}
+  - {fileID: 2646974569853523764}
+  - {fileID: 2646974569365718697}
+  - {fileID: 6415606878178217570}
 --- !u!70 &2646974568608923225
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -849,7 +857,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &7720378955587853258
 MonoBehaviour:
   m_ObjectHideFlags: 0
