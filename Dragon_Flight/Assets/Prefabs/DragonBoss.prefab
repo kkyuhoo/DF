@@ -346,6 +346,14 @@ MonoBehaviour:
   startHealth: 1000
   health: 1000
   healthBar: {fileID: 9062625685243872614}
+  childObject:
+  - {fileID: 7483939914838906339}
+  - {fileID: 7483939913513495141}
+  - {fileID: 7483939913759812169}
+  - {fileID: 7483939914102542205}
+  - {fileID: 7483939914155141000}
+  - {fileID: 7483939913667212821}
+  - {fileID: 972286590096359532}
 --- !u!1 &7483939913513495141
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,7 +13,8 @@ public class BossMovement : MonoBehaviour
     public float health;
 
     public GameObject healthBar;
-
+    public List<GameObject> childObject = new List<GameObject>();
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -55,7 +56,15 @@ public class BossMovement : MonoBehaviour
 
         if (health <= 0)
         {
-            Destroy(gameObject);
+            //for문 childObject 비활성하
+            for (int i = 0; i < childObject.Count; i++)
+            {
+                childObject[i].SetActive(false);
+            }
+
+            //애니메이션 트리거 Death
+            gameObject.GetComponent<Animator>().SetTrigger("Death");
+            Destroy(gameObject, 0.5f);
         }
     }
 }
